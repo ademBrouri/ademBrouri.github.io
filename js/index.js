@@ -4,7 +4,7 @@ var id = null;
 const animationDistanceX = 725;
 const animationDistanceMinY = -100;
 const animationDistanceMinX = 0;
-const animationDistanceY = 425;
+const animationDistanceY = 430;
 
 navToggle.addEventListener('click', () => {
     document.body.classList.toggle('nav-open');
