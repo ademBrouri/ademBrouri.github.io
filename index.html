@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adem Portfolio Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body onload="myMove()">
+    <header>
+      <div class="logo">
+        <img src="assets/logo.PNG" alt="" />
+      </div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="animation"></span>
+      </button>
+      <nav class="navigation">
+      <ul class="navigationList">
+      <li class= "navigationPage"> <a href="#home" class="navigationLink">Home</a></li>
+       <li class= "navigationPage"> <a href="#services" class="navigationLink">My Service</a></li>
+      <li class= "navigationPage"> <a href="#about" class="navigationLink">About me</a></li>
+      <li class= "navigationPage"> <a href="#work" class="navigationLink">My Work</a></li>
+     
+      </nav>
+    </header>
+    <!-- Introduction -->
+    <section class="intro" id="home">
+            <h1 class="sectionTitle sectionTitleHome">
+                Hello, I am  <strong>Adem Brouri</strong>
+            </h1>
+            <p class="sectionSubTitle sectionSubTitleIntro">developer</p>
+            <img src="assets/intro.jpg" alt="a picture of me" class="introImg">
+            <img src="assets/chibiYuno.PNG" id ="animate">
+        </section>
+        
+        <!-- Mes aptitudes -->
+        <section class="my-services" id="services">
+            <h2 class="sectionTitle sectionTitleServices">What I do</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Bot programming</h3>
+                    <p>One of my favourite activities is to automate tasks, that’s why I have a good level in libraries like pyautogui, numpy, opencv , selenium ... Why do I tear myself to do something if a bot can do it in my place.</p></div> 
+                <div class="service">
+                    <h3>Embedded systems</h3>
+                    <p> I have studied electronics for three years before I decided to do a software engineering degree. So I have a good level in Microcontroleur , DSP , FPGA ...</p></div> 
+                <div class="service">
+                    <h3>Game programming</h3>
+                    <p>From my younger years I have always played videogames, and after gaining enough  knowledge. I have tried to make my ones game mostly with sdl2 in C, I have also tried some unity and unreal engine but didn’t have enough time to master them.</p>
+                </div> 
+            </div>
+                <div class="service">
+                    <h3>Cybersecurity</h3>
+                    <p>The field that has made me love computer science, after I have participated in a CTF I have learned to use Kali Linux, metasploit and his friends, aircrack-ng, nmap, ghindra ...</p>
+                </div> 
+            </div> 
+            <div class="service">
+                    <h3>Networking</h3>
+                    <p>My first stage experience was in networking, I have learned a lot about Cisco packet tracers, GNS3, scripting and mostly about static and dynamic IP addressing.</p>
+                </div> 
+            </div> 
+        <a href="#work" class="btn">My Work</a>
+        </section>
+        
+        
+        <!-- About me -->
+        <section class="about-me" id="about">
+            <h2 class="sectionTitle sectionTitleAboutMe">Who I am</h2>
+            <p class="sectionSubTitle sectionSubTitleAbout">Full interest developer</p>
+          <div class="aboutMeBody">
+               <p>I have begun my studies thinking about building robots in my future and electronics looked like the best field to do that, but after figuring out how much people are needed from different fields to build a big and smart robot, I have figured that I can do that even if I become a software engineer. This field while gives me the opportunity to create the brain of the robot the artificial intelligence how was, in my opinion, the most amusing part. It was after some years in electronics that I begin to develop a loot of interest in different fields of computer science and decided that it was my vocation  like cybersecurity (because of a book I have read about) and game programing (because it was my childhood wish).</p>
+               <p>My actual favoured topic of interest is the AI, in any form she can take (video game AI, Bot , Deep learning ...  ), but I still take a look at exploitdb when I can to learn about new security vulnerabilities.</p>
+           </div>
+           <img src="assets/Adem.jpg" alt="reverend insanity character" class="aboutMeImg">
+        </section>
+      <!-- My Work -->
+        <section class="myWork" id="work">
+            <h2 class="sectionTitle sectionTitleWork">My work</h2>
+            <p class="sectionSubTitle sectionSubTitleWork"> Some of my works </p>
+            <div class="portfolio">
+                <!-- Portfolio item 01 -->
+                <a href="portfolioElement.html" class="portfolioItem">
+                    <img src="assets/map.PNG" alt="" class="portfolioImg">
+                </a>
+                
+                <!-- Portfolio item 02 -->
+                <a href="#" class="portfolioItem">
+                    <img src="assets/portfolio2.jpg" alt="" class="portfolioImg">
+                </a>
+                <!-- Portfolio item 03 -->
+                <a href="#" class="portfolioItem">
+                    <img src="assets/portfolio3.jpg" alt="" class="portfolioImg">
+                </a>
+            </div> 
+      </section>
+
+      <!-- Footer -->
+        <footer class="footer">
+            <a href="mailto:adem.brouri@polymtl.ca" class="footer__link">adem.brouri@polymtl.ca</a>
+            <ul class="social-list">
+                <li class="social-list__item"><a class="social-list__link" href="https://gitlab.com/doudoumi"><i class="fab fa-gitlab"></i></a></li>
+                <li class="social-list__item"><a class="social-list__link" href="https://ca.linkedin.com/in/brouri-adem-875b95169"><i class="fab fa-linkedin"></i></a></li>
+                <li class="social-list__item"><a class="social-list__link" href="https://www.waifu.dx.am"><i class="fas fa-terminal"></i></a></li>
+                <li class="social-list__item"><a class="social-list__link" href="https://www.facebook.com/DOUDOUMI.14/"><i class="fab fa-facebook-square"></i></a></li>
+            </ul>
+        </footer>
+        <script src="js/index.js"></script>
+  </body>
+</html>
