@@ -1,10 +1,10 @@
 const navToggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelectorAll('.navigationLink')
 var id = null;
-const animationDistanceX = 800;
+const animationDistanceX = 725;
 const animationDistanceMinY = -100;
 const animationDistanceMinX = 0;
-const animationDistanceY = 350;
+const animationDistanceY = 425;
 
 navToggle.addEventListener('click', () => {
     document.body.classList.toggle('nav-open');
