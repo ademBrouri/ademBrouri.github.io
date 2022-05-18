@@ -267,7 +267,7 @@ header {
 /* Service */
 .my-services {
   background-color: var(--clr-obfuscate);
-  background-image: url(../assets/AdemIsHere.png);
+  background-image: url(../assets/Background.jpeg);
   background-size: cover;
   background-blend-mode: multiply;
   color: var(--clr-dark);
