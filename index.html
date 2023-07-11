@@ -1,126 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Adem Portfolio Website</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
-      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
-      crossorigin="anonymous"
-    />
-    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body onload="myMove()">
-    <header>
-      <div class="logo">
-        <img src="assets/icon.gif" alt="" />
-      </div>
-      <button class="nav-toggle" aria-label="toggle navigation">
-        <span class="animation"></span>
-      </button>
-      <nav class="navigation">
-      <ul class="navigationList">
-      <li class= "navigationPage"> <a href="#home" class="navigationLink">Home</a></li>
-       <li class= "navigationPage"> <a href="#services" class="navigationLink">My Service</a></li>
-      <li class= "navigationPage"> <a href="#about" class="navigationLink">About me</a></li>
-      <li class= "navigationPage"> <a href="#work" class="navigationLink">My Work</a></li>
-     
-      </nav>
-    </header>
-    <!-- Introduction -->
-    <section class="intro" id="home">
-            <h1 class="sectionTitle sectionTitleHome">
-                Hello, I am  <strong>Adem Brouri</strong>
-            </h1>
-            <p class="sectionSubTitle sectionSubTitleIntro">Software Engineer</p>
-            <img src="assets/Face.jpg" alt="a picture of me" class="introImg">
-            <img src="assets/Icon.avif" id ="animate">
-        </section>
-        
-        <!-- Mes aptitudes -->
-        <section class="my-services" id="services">
-            <h2 class="sectionTitle sectionTitleServices">Experience</h2>
-            <div class="services">
-              <div class="service">
-                  <h3>Software Engineer [LGS (IBM)]</h3>
-                  <p>Developed a solution for personal information protection using data science techniques. Collaborated with a team to implement the solution. Ensured privacy and security of personal information.</p>
-              </div> 
-          
-              <div class="service">
-                  <h3>Functional Analyst [Desjardins]</h3>
-                  <p>Analyzed business requirements and translated them into functional specifications. Collaborated with cross-functional teams to implement software solutions. Conducted testing and quality assurance activities.</p>
-              </div> 
-          
-              <div class="service">
-                  <h3>Development Team Lead [Archer]</h3>
-                  <p>Led a development team in implementing Salesforce solutions. Mentored team members and conducted code reviews.</p>
-              </div> 
-          
-              <div class="service">
-                  <h3>Unreal Engine Developer [CAE]</h3>
-                  <p>Contributed to the development of the CAE Prodigy image generator (IG) using Unreal Engine. Collaborated with a team to deliver a comprehensive visual system.</p>
-              </div> 
-          
-              <div class="service">
-                  <h3>Network Architect [Ooredoo]</h3>
-                  <p>Designed and implemented network architecture for telecommunications infrastructure. Managed and maintained network systems.</p>
-              </div> 
-          </div>
-          
-        <a href="#work" class="btn">My Work</a>
-        </section>
-        
-        
-        <!-- About me -->
-        <section class="about-me" id="about">
-            <h2 class="sectionTitle sectionTitleAboutMe">Who I am</h2>
-            <p class="sectionSubTitle sectionSubTitleAbout">Full interest developer</p>
-          <div class="aboutMeBody">
-               <p>I embarked on my academic journey with the dream of building robots, and initially, I believed that electronics would be the key field for me. However, as I delved deeper into the intricacies of robotics, I realized that creating a truly remarkable and intelligent robot requires collaboration across various disciplines. This revelation led me to explore the realm of software engineering, which surprisingly offered the perfect platform to pursue my robotic aspirations.</p>
-               <p>In the world of software engineering, I discovered the thrilling opportunity to craft the very essence of a robot—the artificial intelligence that serves as its brain. For me, this aspect proved to be the most captivating and engaging part of the entire process. Although I had initially focused on electronics, my curiosity gradually expanded to encompass diverse areas within computer science. Two particular domains caught my attention: cybersecurity, ignited by an intriguing book I read, and game programming, a long-held childhood dream.</p>
-               <p>At present, my greatest passion lies in the vast field of artificial intelligence. I find immense joy in exploring its multifaceted forms, whether it be designing AI systems for video games, creating intelligent bots, or delving into the fascinating realm of deep learning. Nevertheless, I continue to keep an eye on the latest developments in cybersecurity vulnerabilities by regularly perusing exploitdb, as I believe in constantly expanding my knowledge base. </p>
-               <p>By channeling my enthusiasm into AI and embracing its myriad applications, I strive to bring forth innovative solutions and push the boundaries of what is possible in this ever-evolving field.</p>
-           </div>
-           <img src="assets/Adem.jpg" alt="Adem" class="aboutMeImg">
-        </section>
-      <!-- My Work -->
-        <section class="myWork" id="work">
-            <h2 class="sectionTitle sectionTitleWork">My work</h2>
-            <p class="sectionSubTitle sectionSubTitleWork"> Some of my works click for more information. </p>
-            <div class="portfolio">
-                <!-- Portfolio item 01 -->
-                <a href="portfolioElement.html" class="portfolioItem">
-                  <img src="assets/AdemHarraga.png" alt="" class="portfolioImg">
-                </a>
-                
-                <!-- Portfolio item 02 -->
-                <a href="portfolioElement-1.html" class="portfolioItem">
-                    <img src="assets/UIA.PNG" alt="" class="portfolioImg">
-                </a>
-                <!-- Portfolio item 03 -->
-                <a href="portfolioElement-2.html" class="portfolioItem">
-                    <img src="assets/Prodigy.png" alt="" class="portfolioImg">
-                </a>
-            </div> 
-      </section>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta property="og:image" content="./assets/me.jpg"/>
+         <link rel="apple-touch-icon" sizes="180x180" href="/assets/Icon.avif"> 
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/Icon.avif"> 
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/Icon.avif"> 
+        <link rel="manifest" href="data:application/manifest+json;base64,ewogICAgIm5hbWUiOiAiIiwKICAgICJzaG9ydF9uYW1lIjogIiIsCiAgICAiaWNvbnMiOiBbCiAgICAgICAgewogICAgICAgICAgICAic3JjIjogIi9hbmRyb2lkLWNocm9tZS0xOTJ4MTkyLnBuZyIsCiAgICAgICAgICAgICJzaXplcyI6ICIxOTJ4MTkyIiwKICAgICAgICAgICAgInR5cGUiOiAiaW1hZ2UvcG5nIgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAic3JjIjogIi9hbmRyb2lkLWNocm9tZS0zODR4Mzg0LnBuZyIsCiAgICAgICAgICAgICJzaXplcyI6ICIzODR4Mzg0IiwKICAgICAgICAgICAgInR5cGUiOiAiaW1hZ2UvcG5nIgogICAgICAgIH0KICAgIF0sCiAgICAidGhlbWVfY29sb3IiOiAiI2ZmZmZmZiIsCiAgICAiYmFja2dyb3VuZF9jb2xvciI6ICIjZmZmZmZmIiwKICAgICJkaXNwbGF5IjogInN0YW5kYWxvbmUiCn0K"> 
+         <link rel="mask-icon" href="/assets/safari-pinned-tab.ce130eb8.svg" color="#5bbad5"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, user-scalable=0"/>
+        <title>Adem Website</title>
+        <script type="module" crossorigin src="/assets/index.f2eeb026.js"></script>
+        <link rel="stylesheet" href="/assets/index.5267b146.css">
+    </head>
+    <body>
+        <canvas id="bg"></canvas>
+        <main class="main">
+            <header>
+                <h1 id="welcome-title">Adem Brouri</h1>
+            </header>
+            <blockquote style="width: 80%;">
+                <div id="myname">
+                    Hi! <span class="type-text"></span>
+                </div>
+                <p id="scroll-clue">︾	&nbsp;&nbsp;scroll down	&nbsp;&nbsp;︾</p>
+            </blockquote>
+            <div id="line1">
+                <h1>Let's</h1>
+            </div>
+            <div id="line2">
+                <h1>Explore! 🚀 </h1>
+            </div>
+            <div style="height: 1800px;"></div>
+            <section>
+                <h2 id="myprojects">My Projects</h2>
+                <div class="project-container">
+                    <div class="project 1" id="p1">
+                        <img src="/assets/scrabble.3db0a8ff.png" alt="">
+                    </div>
+                    <div class="project 2" id="p2">
+                        <img src="/assets/Prodigy.png" alt="">
+                    </div>
+                    <div class="project 3" id="p3">
+                        <img src="/assets/inf1900.a7250348.png" alt="">
+                    </div>
+                    <div class="project 4" id="p4">
+                        <img src="/assets/lgs.svg" alt="">
+                    </div>
+                    <div class="project 5" id="p5">
+                        <img src="/assets/AdemHarraga.png" alt="">
+                    </div>
+                    <div class="coming-soon">
+                        <h2 style="margin-top: 120px;">More coming soon!</h2>
+                    </div>
+                </div>
+            </section>
+            <div id="blanket"></div>
+            <div id="projects-description">
+                <div style="display: flex; flex-direction: row-reverse; padding: 25px; padding-bottom: 10px;">
+                    <img id="close-project" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAABkklEQVRYheWXTUoDQRBGX/mz0IAKeoOYlXcQr6IYDKiR3MG1bhJMwJ0n8RC6UnChqygYIYq6+FykB8axI52xxxjsXXfV9PdmqqumC/77sOyCpAqwDqxE1roHzs3saiiApH3gCOgCL5EB5hi8VMPMWl+skiqS3iVtRxZOa1QlvUkq+4xbkm6LEk/p3EnaTOZTKdsi8FQ0ANADlnwAYxmTAyCpVIRvEIDb8EJSLcC35nyDIGZCnMysL+kQ6Eia9ubxQHwbaAF1M+tHA3AQp5JwEGZmzYx4FWg7cS/gjwA8ECQQecVHBvBBAK95xXMBpCBmgSQMe2Z2kmevsdeBXF/AxbwJ1BmEIMmO5vdPRgBwqfYp5qkzoUIPoRPvkDlwnuyIn4bDxGNAJAINSZdDbCVJN6Gl2Pl6S7GkS0mNZD5KKV4LKa9m1pZ0FlqKg9MwdMNRfcdeB/4UQA9Y+AXNReDxy6qkVXdlrhalLGkney3PNia7wDHwADxH1p8HloGD9I/L15qVgQ3it2ZdBq3ZdeR9J3x8AOkLAYUht8XGAAAAAElFTkSuQmCC" alt="" style="cursor: pointer;">
+                </div>
+                <h2 id="project-title" style="margin-top: 10px; margin-bottom: 20px;"></h2>
+                <div id="showcase-area">
+                    <button id="switch-left">❮</button>
+                    <img id="project-img" src="" alt="">
+                    <button id="switch-right">❯</button>
+                </div>
+                <p id="description-paragraph"></p>
+                <div style="display: flex; flex-direction:row; justify-content:space-evenly">
+                    <a id="try-link" style="text-align: center;" href="http://polytechnique-montr-al.gitlab.io/log2990/20213/equipe-205/log2990-205/#/game-options" target="_blank" rel="noopener noreferrer">
+                        <button class="try-button play">Check it out !</button>
+                    </a>
+                    <a id="git-link" style="text-align: center; display: none;" href="https://github.com/NaserHamitou/Scrabble-Online" target="_blank" rel="noopener noreferrer">
+                        <button class="try-button git">Github repo</button>
+                    </a>
+                </div>
+                <h4 style="margin-left: 6%; margin-bottom: 5px; font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-weight: lighter; color: #ffffffad;">Made with </h4>
+                <div id="stack" style="display: flex; flex-direction: row; justify-content:space-evenly; background-color: #f0f6ff; border-radius: 15px; width: 90%; padding-top: 5px; padding-bottom: 5px;"></div>
+            </div>
+            <section>
+                <div id="myjourney">
+                    <div style="text-align: left;">My Journey </div>
+                    <div id="underline" style="background-color: white; height: 2px;"></div>
+                </div>
+            </section>
+            <!-- New timeline [In progress] -->
+            <section class="timeline">
+                <ul>
+                    <li>
+                        <div>
+                            <time>2018</time>
+                            <h3>Network Architect </h3>
+                            <h4>Ooredoo</h4>
+                            <br>
+                            <p>- Designed and implemented network architecture for telecommunications infrastructure.</p>
+                            <p>- Managed and maintained network systems.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <time>2021</time>
+                            <h3>Unreal Engine Developer</h3>
+                            <h4>CAE</h4>
+                            <br>
+                            <p>- Contributed to the development of the CAE Prodigy image generator (IG) using Unreal Engine.</p>
+                            <p>- Collaborated with a team to deliver a comprehensive visual system.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <time>2022</time>
+                            <h3>Development Team Lead</h3>
+                            <h4>Archer</h4>
+                            <br>
+                            <p>- Led a development team in implementing Salesforce solutions.</p>
+                            <p>- Mentored team members and conducted code reviews.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="intern">
+                            <time>2023</time>
+                            <h3>Functional Analyst</h3>
+                            <h4>Desjardins 💼</h4>
+                            <p>- Analyzed business requirements and translated them into functional specifications.</p>
+                            <p>- Collaborated with cross-functional teams to implement software solutions. Conducted testing and quality assurance activities.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="intern">
+                            <time>2023</time>
+                            <h3>Software Engineer</h3>
+                            <h4>LGS (IBM)</h4>
+                            <p>- Developed a solution for personal information protection using data science techniques.</p>
+                            <p>- Collaborated with a team to implement the solution.</p>
+                            <p>- Ensured privacy and security of personal information.</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <!-- Workzone End -->
+            <section style="background-color: black;">
+                <div id="aboutme">
+                    <img src="/assets/me.8581f398.jpg" alt="" style="border-radius: 35px; margin-top: 30px;" width="250" height="250">
+                    <div style="margin-left: 2vw;">
+                        <h3 style="font-size: 36px;">About Me</h3>
+                        <p style="font-family: 'Montserrat', sans-serif;">I embarked on my academic journey with the dream of building robots, and initially, I believed that electronics would be the key field for me. </p>
+                        <p style="font-family: 'Montserrat', sans-serif;"> However, as I delved deeper into the intricacies of robotics, I realized that creating a truly remarkable and intelligent robot requires collaboration across various disciplines. </p>
+                        <p style="font-family: 'Montserrat', sans-serif;"> This revelation led me to explore the realm of software engineering, which surprisingly offered the perfect platform to pursue my robotic aspirations. </p>
 
-      <!-- Footer -->
-        <footer class="footer">
-            <a href="mailto:adem.brouri@polymtl.ca" class="footer__link">adem.brouri.pro@gmail.com</a>
-            <ul class="social-list">
-                <li class="social-list__item"><a class="social-list__link" href="https://gitlab.com/doudoumi"><i class="fab fa-gitlab"></i></a></li>
-                <li class="social-list__item"><a class="social-list__link" href="https://www.linkedin.com/in/adem-brouri-875b95169/"><i class="fab fa-linkedin"></i></a></li>
-                <!-- <li class="social-list__item"><a class="social-list__link" href="https://www.waifu.dx.am"><i class="fas fa-terminal"></i></a></li> -->
-                <!--<li class="social-list__item"><a class="social-list__link" href="https://www.facebook.com/DOUDOUMI.14/"><i class="fab fa-facebook-square"></i></a></li> -->
-            </ul>
-        </footer>
-        <script src="js/index.js"></script>
-  </body>
+                        <p style="font-family: 'Montserrat', sans-serif;">    In the world of software engineering, I discovered the thrilling opportunity to craft the very essence of a robot—the artificial intelligence that serves as its brain. For me, this aspect proved to be the most captivating and engaging part of the entire process. Although I had initially focused on electronics, my curiosity gradually expanded to encompass diverse areas within computer science. Two particular domains caught my attention: cybersecurity, ignited by an intriguing book I read, and game programming, a long-held childhood dream. </p>
+                            
+                        <p style="font-family: 'Montserrat', sans-serif;">   At present, my greatest passion lies in the vast field of artificial intelligence. I find immense joy in exploring its multifaceted forms, whether it be designing AI systems for video games, creating intelligent bots, or delving into the fascinating realm of deep learning. Nevertheless, I continue to keep an eye on the latest developments in cybersecurity vulnerabilities by regularly perusing exploitdb, as I believe in constantly expanding my knowledge base. </p> 
+                            
+                        <p style="font-family: 'Montserrat', sans-serif;">   By channeling my enthusiasm into AI and embracing its myriad applications, I strive to bring forth innovative solutions and push the boundaries of what is possible in this ever-evolving field. </p> 
+            </p>
+                    </div>
+                </div>
+            </section>
+            <section style="margin-top:50px; display: flexbox; flex-direction: column; justify-content: center;">
+                <hr style="border-color: #ffffff; box-shadow:none; border-width: 1px; margin-bottom: 40px;">
+                <h3>Contact Me</h3>
+                <div id="contact-me" style="display: flex; justify-content:space-around;align-content: center ;padding: 5px; margin-top: 50px;">
+                    <a href="https://www.linkedin.com/in/adem-brouri-875b95169/">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABmJLR0QA/wD/AP+gvaeTAAAFE0lEQVR4nO3d3U8cVRgG8OfM7LLLR4Fd6CKR0A+NEBAWLaSJH4lGo9xYIK1e1IQaLfbWaC2N8YIbU4H+AaLWpBo0QaK0tuXCC+9MTFrThWyrSWkbJBopXRrA7tLdmeOFYDRQmDM7Z2c58/4u2XnPnJxn58zOBzMAIYQQQgghhBBCCPEK5kgrffECPZDu4hrrAMfjAGoAFDvSdv74C8AMGH5mnI8ZKf8Y+hrvZdto1gHoJ2L7OcMAgN3ZtrXFTDHGjxm9Ld9k04j9AEZGdO1GXT843smmAwo4aaaae9HHTDvFmt210uD/66gWjJ2wW2xrC1iZdkbtrlRFjLEuo7d5TLhOeE198QItmLkC4CHhWrXdMFO+etEds/AUpAfSXaDBX88uPWB0iBYJB8AZ6xSt8QoOU34AAPbYqPEGxlpFS+wEUG2jxiseFC2wE0CJjRqvEB4b28cBxBm+XKyEATjUFEJPSwWatgfBAMTnUvgklsBnsQR4LjqRp6QHwAB8/lItDjaU/+/vbdVFaKsuwjO1Jej+btqzIUifgg41hdYM/n8dbCjHq40h2d3IW9IDeLOlYtNlDreEZXcjb0kPoGl7cNNlWiKFsruRt6QH4NW53SrpAUzMpiwsk5TdjbwlPYBPY7c3XWbockJ2N/KW9ABOT87jqyt3Nvz8y/i87G7kLenHARxA97lp/DC9hJ5oGI2VQZgciM0m8fHlBIbj857eT+TkSNjkwKlYAqdi3p1q7ofOBbmMAnAZBeAy6fsAo7fZ0nJ6/4Sj9aUBHa/Ul+G5HSWIVhUiUuRDWUDHXDKDubsZXL29jO9vLmJ8ahEzi2lL65AhJzvhXNIZw1ttlXj/iQhKA/qazyNFPkSKfGioDGJ/XRnSJsfpyXl88OOfmF7IfRBKTUHFfg3nXt6JgWer1x389fg1hsPRMGKvP4L23dsk93AtZQLQGPB15w68sMveIJYGdJw9sBPdj+b21LgyARzbG8GLWX6DdcbwUXsNHqvK3dlZZQLoe7rKkXYCOsPwvlr4NWfu3N+MMgE4OWB14QAO1Jc51t5GlAnAae/ujeRkPcr9DAWA2GwK49cX8MdSBqGgjtYHCvH8zm0I+qxvJdFIEHXhAH5NLEvsqWIBLBscPeMzGF7n9HZtqR9D7TVCv5KerCmWHoAyUxAH8Nr539YdfACYXkhj3+hNXJhasNzmUzXy/81NmQBGf7mDkav3v/ADAGmT440LM1hYNiy1WV8RcKJrG1ImgMGfbllabvZuBl/ENw5qVSho7Wg6G8oEMHlr84v/q85bnIbChRSAJRzAPcP6hc1JC3dqAEC5xfNJ2VAiAFFzyYyl5fQcHA0rEYDoMIlsLbIpEcBWRgG4jAJwGQXgMgrAZRSAyygAl1EALqMAXEYBuIwCcBkF4DIKwGUUgMsoAJdRAC6jADaQi7tDhdehfRjLn8tJecg8HhUaU9oCXGYngCXHe6EMZv22uxV2AvjdRo1HcOGxEQ+A4ZJwjWewi6IVwgEwzoUfUO0VjPEzojXCARihzLcAvyZa5wHXjaTvrGiR+BR0pDXNGHqF6xTHwN6280oTWz9DV17bcdJOrZIY7zeONwtPP0AWxwFmqrkXDIN269XBB8xk9D271dm/xKd/opNzcxBgD2fb1tbCrzFoR+1+81c5c7pj6KJfTxR0cpgdYGwP/nmNlWoP+V4CMAPOLzGNjRnl6TM40ureUz4IIYQQQgghhBBCyJbzN7XAPEaMlVbGAAAAAElFTkSuQmCC" alt="" style="padding: 0px;">
+                    </a>
+                    <a href="https://gitlab.com/doudoumi">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEwAAABMCAYAAADHl1ErAAAABmJLR0QA/wD/AP+gvaeTAAAFW0lEQVR4nO2cXWxURRTHf1sRagtKFdFq3KxS6keq1oj49YTRRIRIiBEejImaSI1BoiYEoyamohF9Uh98MRJ9UyxoQqOJxPIACBqa0CgJhhq0VRIRFJSWlW23Pswu3lzux5m5M/e25P6S87I7d85/zs7eOTN77kJOTk5OTk5OjhUKWQuo0QS0A3OAFqC59voI8BdwFPgROJWJOg9ZBKwAdAD3AIuATqAo0DIBDAH7gL6a7a+9fk5SBNYBB1GDtGFDwAZgforjcE4nsAmoYi9QfqsCW4HbUxqTE9qBL3EXpDDrZYrNuEZgPVAm/WDVrQx0AzMcjzUxJWAP2QXKb/1Am9MRJ2A5cILsg+S348Ayh+M24jGgQvbBCbMxoMvZ6DV5gewDIrV1jmIgpovsg6BrzziJhIDlqKmedQB0bQx40EE8Imljct7gpfY3cK3JwE32ko3AN8AtgrZ9wLtAK3AHsAS1wXbBBLAb+Bo4AEwH3gemhbTvB+4G/nWk5wzrkX+Snb5rZwBPAL9q9CGxTcB1AVo/ibmu2zwMMtqRZ/BHI/q5BPgi5LoycAj4AdgLDAJHQtqeBB6J8BO3KJ3CcWKrszcciOmrAdiICsybqOSyWHs9iGZgAfA0sBn4DbgtxsdSgc7emD6MWShwrhOwNHgAmdYF0g7DPs0gXtJoC3C5ZnsXtArb6Y4tlnnon2dVUUfPWfIqcq3XSDqUzrBH0U9BChjmOhYJWjmDKKDGaIUC8BNmy/0aWyIMOYxc60EEk0Iyw25EOF0DyPIArxG9e3QbcIMNx89iNrv6gPNsCEjAIvT2u6ttOP1cw6E3obzChnMLvI1c9xYbDoc0HNbtDRuOLTEH+UHBoaTOmtBPJyrApUkdW0Y6y8aBC6I6irspzkc/ndgB/KF5jWs+E7ZrIGZvGRcwk2x9m8E1rtkJjArbRo45LmAzhU68/GJwjWvGUTmZhMgxuwhY1LFOlhwRtrsw6s24gOkkfnVmG1yTBi3CdpH37LiAjAideLnM4Jo0kN6PI8ccF7CTQideJGf9aVNCPsP+iXozLmDDQidelgj6TRudn9VMxnyGmZjtIxcncWqZAvAtcu2zkjoc1nBWtwGy33jXWYlcd+KtEUCPhkOvrbXhPCFzUXmhVPOnNpyu1XDo35etsCHAkGbguwBdUfacDccdmk69VgaesiFCkyKwy0Dv9bYEDBo490/1NPKzAmpWHzPQOGhTyOsGAvw2CrwDXGVTWI0G4GFUDb+pvldsCiqh7klJgzaBOjLeiSpu68B8NW1BlVxtBH5PqGkcuNpQRyhbIxxWge2ox1xM7nP7gLcIr7SpczPwFXq/Bkmsxywk0USVChxGrUpNwGvoF9ptBy4S6liKKiKxGbCFusGQ0hvhdC//79ceAk4LxQ6gn12vxN6TJZs1fWsRV+7kndpPCsSe5uwaMikfCfqX3A6c1/F3x4i409N2Q0zbDxLouJLkpe4v6zo1KdmcjkoKw0qEelBLfJ1lqNVsLnA+amE4garv+hD42UBDnS21vk3oR5WRjiXwLyaqKLgMXJyGCNRRksnM+hPz8gdjFhP+lXg+JQ2z0M8PK8D9Kek7iy6CV6thVB1rGugkrVXg8ZR0hbKG4KDtIJ36CmkpVpUMnwLxs4rgr+dx4D3UInAXcKvHbNXrSwJWQT1ANqm4D72t0SpLfuMCdgy415Iv68xDPY0xWQK2iwxWQ12moRLCUbIL2AjqscTJ8ruCiBIqiQ3b87kIWBX1uEzRUt+ZcBNqEP5FwWbAKsDHqHrcc4ZW1Nfke1TAXrTU72rkDzBMWUpM8T/lyMnJycnJycnJSZf/APgcLOMFvgTxAAAAAElFTkSuQmCC" alt="" height="76" style="background-color:white; border-radius: 10px; margin-top: 10px;">
+                    </a>
+                    <input onclick="copyToClipboard()" id="mail-button" type="image" height="76" style="background-color:white; border-radius: 10px; margin-top: 10px;">
+                </div>
+            </section>
+            <section style="justify-content:right; display: flex; height: 40px; overflow-y: hidden;">
+                <div id="wrapper">
+                    <p style="margin-right: 2px; font-family: 'Montserrat';">Email Copied !</p>
+                    <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                        <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
+                        <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+                    </svg>
+                </div>
+            </section>
+            <br>
+            <section style="position: relative; bottom: 0px; height: 200px; width: 100%"></section>
+        </main>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Montserrat&display=swap'); </style>
+        <script>
+            function copyToClipboard() {
+                checkMark = document.getElementById("wrapper");
+                checkMark.style.display = "flex";
+                const copyText = "adem.brouri.pro@gmail.com";
+                navigator.clipboard.writeText(copyText);
+                setTimeout(()=>{
+                    checkMark.style.display = "none";
+                }
+                , 2000)
+            }
+        </script>
+    </body>
 </html>
