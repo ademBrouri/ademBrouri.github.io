@@ -42,7 +42,7 @@ body {
   .portfolioImg {
     width: 100%; /* Ensure the image width fits the container */
     height: 100%; /* Ensure the image height fits the container */
-    object-fit: cover; /* Change object-fit to "cover" to fit and cover the container */
+    /*object-fit: cover; /* Change object-fit to "cover" to fit and cover the container */
     transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms linear;
   }
   .experiences-container {
